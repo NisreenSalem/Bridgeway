@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+/* Brand tokens: exposed as Tailwind utilities (bg-plum, text-lime, ...) */
+@theme {
+  --font-sans: 'Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif;
+  --color-plum: #3F3047;
+  --color-lime: #eef36a;
+  --color-sage: #9BC995;
+  --color-lilac: #a99cc7;
+  --color-paper: #ffffff;
+  --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Hero entrance: the single orchestrated page-load moment */
+  --animate-rise: rise 0.9s var(--ease-premium) both;
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: none; }
+  }
+}
+
+html { scroll-behavior: smooth; }
+body { @apply bg-paper font-sans text-plum antialiased; }
+
+/* Keyboard focus visible everywhere */
+:focus-visible { outline: 2px solid var(--color-plum); outline-offset: 3px; }
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
