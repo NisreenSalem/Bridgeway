@@ -63,7 +63,7 @@ const links = [
 
 .header-container {
   width: 100%;
-  max-width: 72rem;
+  max-width: 65rem;
   margin-inline: auto;
   display: flex;
   flex-wrap: wrap;

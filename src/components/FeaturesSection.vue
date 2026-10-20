@@ -44,8 +44,7 @@ const features = [
       </h2>
 
       <p>
-        One platform connects you to customers, banks, and your team,
-        so money moves without the friction.
+       One platform connects you to customers, banks, and your own books, so money moves without the friction.
       </p>
     </div>
 
@@ -69,17 +68,17 @@ const features = [
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 16px;
+  gap: 0px;
   padding: 64px 40px;
   margin-bottom: 32px;
 }
 
 .benefits-header h2 {
-  max-width: 450px;
+  max-width: 500px;
   margin: 0;
   color: #3f3047;
-  font-size: 36px;
-  font-weight: 800;
+  font-size: 50px;
+  font-weight: 700;
   line-height: 1.15;
   letter-spacing: -1px;
 }
@@ -88,7 +87,8 @@ const features = [
   max-width: 320px;
   margin: 0;
   color: rgba(63, 48, 71, 0.7);
-  font-size: 13px;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 1.7;
 }
 
